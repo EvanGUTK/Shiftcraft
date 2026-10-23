@@ -30,7 +30,12 @@ A shift begins with three workstations and a due-time target. Inspection becomes
 
 ## System map
 
-```mermaid
+![Proposed system architecture](assets/architecture.svg)
+
+<details>
+<summary>Editable Mermaid source</summary>
+
+```text
 flowchart TD
   A[Scenario and player plan] --> B[Simulation core]
   B --> C[Orders and station queues]
@@ -41,6 +46,8 @@ flowchart TD
   F --> G[Debrief and retry]
   G --> A
 ```
+
+</details>
 
 The arrows describe proposed data or control relationships. Detailed ownership and error paths live in the architecture and pipeline specifications.
 

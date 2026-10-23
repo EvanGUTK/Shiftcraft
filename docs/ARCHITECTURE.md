@@ -2,7 +2,12 @@
 
 ## Component boundaries
 
-```mermaid
+![Proposed system architecture](../assets/architecture.svg)
+
+<details>
+<summary>Editable Mermaid source</summary>
+
+```text
 flowchart TD
   A[Scenario and player plan] --> B[Simulation core]
   B --> C[Orders and station queues]
@@ -13,6 +18,8 @@ flowchart TD
   F --> G[Debrief and retry]
   G --> A
 ```
+
+</details>
 
 | Component | Owns | Boundary |
 | --- | --- | --- |
